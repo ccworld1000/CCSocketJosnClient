@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -97,7 +97,6 @@
 				5925FC6657C9D8FA5324416A /* Pods-CCSocketJosnClient.debug.xcconfig */,
 				AF5283DE59ABA6D13C110F5F /* Pods-CCSocketJosnClient.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -129,6 +128,10 @@
 		427F36E82383BB8C00D6A842 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					0,
+					1,
+				);
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "CC (deng you hua | cworld1000@gmail.com)";
 				TargetAttributes = {
