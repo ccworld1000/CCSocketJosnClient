@@ -1,16 +1,20 @@
 PODS:
+  - CCSugar (1.2.3)
   - CocoaAsyncSocket (7.6.3)
 
 DEPENDENCIES:
+  - CCSugar
   - CocoaAsyncSocket
 
 SPEC REPOS:
   trunk:
+    - CCSugar
     - CocoaAsyncSocket
 
 SPEC CHECKSUMS:
+  CCSugar: 1c1727172511f684d0e241cca64a8ea14ffe1ec7
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
 
-PODFILE CHECKSUM: 09f1edd5f63b011a81d1548bc4b728a19baedcdb
+PODFILE CHECKSUM: 96e0356e87b410230b73f55ae375f6c518ea3edf
 
 COCOAPODS: 1.8.4

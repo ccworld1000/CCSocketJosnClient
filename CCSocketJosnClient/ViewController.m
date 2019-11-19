@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <GCDAsyncSocket.h>
+#import <CCSugar/CCSugar.h>
 
 @interface ViewController ()<GCDAsyncSocketDelegate>
 
@@ -16,9 +17,28 @@
 @property (weak, nonatomic) IBOutlet UITextView *leftTextView;
 @property (weak, nonatomic) IBOutlet UITextView *rightTextView;
 
+@property (nonatomic, strong) NSMutableArray<NSString *> *sendCache;
+@property (nonatomic, strong) NSMutableArray<NSString *> *receiveCache;
+
 @end
 
 @implementation ViewController
+
+- (NSMutableArray<NSString *> *)sendCache {
+    if (!_sendCache) {
+        _sendCache = [NSMutableArray array];
+    }
+    
+    return _sendCache;
+}
+
+- (NSMutableArray<NSString *> *)receiveCache {
+    if (!_receiveCache) {
+        _receiveCache = [NSMutableArray array];
+    }
+    
+    return _receiveCache;
+}
 
 - (void)dealloc {
     [self disconnectServerHandle:nil];
@@ -48,6 +68,8 @@
 - (IBAction)clearResultHandle:(UIButton *)button {
     NSLog(@"clearResultHandle");
     
+    [self.sendCache removeAllObjects];
+    [self.receiveCache removeAllObjects];
     self.leftTextView.text = @"";
     self.rightTextView.text = @"";
 }
@@ -74,9 +96,17 @@
     }
     
     NSString *testString = @"CC Test";
-    for (int i = 0; i < times; i++) {
-        NSData *data = [[NSString stringWithFormat:@"%@ %@!\n", testString, @(i + 1)] dataUsingEncoding:NSUTF8StringEncoding];
+    __block NSMutableArray *list = [NSMutableArray array];
+    
+    [@(times) timesWithIndex:^(NSUInteger index) {
+        [list addObject: [NSString stringWithFormat:@"%@ %@!\n", testString, @(index + 1)]];
+    }];
+    
+    if (list.count) {
+        NSData *data = [[list componentsJoinedByString:@""] dataUsingEncoding:NSUTF8StringEncoding];
         [self.socket writeData:data withTimeout:-1 tag:0];
+        [self.sendCache concat:list];
+        self.leftTextView.text = [_sendCache componentsJoinedByString:@""];
     }
 }
 
@@ -103,6 +133,14 @@
 }
 
 - (void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag {
+    if (data.length > 0) {
+        NSString *testString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        [self.receiveCache addObject:testString];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.rightTextView.text = [self.receiveCache componentsJoinedByString:@""];
+        });
+    }
+    
     [self.socket readDataWithTimeout:-1 tag:0];
 }
 
