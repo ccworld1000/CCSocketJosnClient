@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		241101710D5AAC503F0DED9C /* Pods_CCSocketJosnClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE87C677E7CB2752BA4AFE45 /* Pods_CCSocketJosnClient.framework */; };
+		427F36F52383BB8C00D6A842 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 427F36F42383BB8C00D6A842 /* AppDelegate.m */; };
+		427F36F82383BB8C00D6A842 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 427F36F72383BB8C00D6A842 /* SceneDelegate.m */; };
+		427F36FB2383BB8C00D6A842 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427F36FA2383BB8C00D6A842 /* ViewController.m */; };
+		427F36FE2383BB8C00D6A842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427F36FC2383BB8C00D6A842 /* Main.storyboard */; };
+		427F37002383BB8E00D6A842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427F36FF2383BB8E00D6A842 /* Assets.xcassets */; };
+		427F37032383BB8E00D6A842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427F37012383BB8E00D6A842 /* LaunchScreen.storyboard */; };
+		427F37062383BB8E00D6A842 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 427F37052383BB8E00D6A842 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		427F36F02383BB8C00D6A842 /* CCSocketJosnClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCSocketJosnClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		427F36F32383BB8C00D6A842 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		427F36F42383BB8C00D6A842 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		427F36F62383BB8C00D6A842 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		427F36F72383BB8C00D6A842 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		427F36F92383BB8C00D6A842 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		427F36FA2383BB8C00D6A842 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		427F36FD2383BB8C00D6A842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		427F36FF2383BB8E00D6A842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		427F37022383BB8E00D6A842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		427F37042383BB8E00D6A842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		427F37052383BB8E00D6A842 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5925FC6657C9D8FA5324416A /* Pods-CCSocketJosnClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCSocketJosnClient.debug.xcconfig"; path = "Target Support Files/Pods-CCSocketJosnClient/Pods-CCSocketJosnClient.debug.xcconfig"; sourceTree = "<group>"; };
+		AF5283DE59ABA6D13C110F5F /* Pods-CCSocketJosnClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCSocketJosnClient.release.xcconfig"; path = "Target Support Files/Pods-CCSocketJosnClient/Pods-CCSocketJosnClient.release.xcconfig"; sourceTree = "<group>"; };
+		EE87C677E7CB2752BA4AFE45 /* Pods_CCSocketJosnClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCSocketJosnClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		427F36ED2383BB8C00D6A842 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				241101710D5AAC503F0DED9C /* Pods_CCSocketJosnClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		427F36E72383BB8C00D6A842 = {
+			isa = PBXGroup;
+			children = (
+				427F36F22383BB8C00D6A842 /* CCSocketJosnClient */,
+				427F36F12383BB8C00D6A842 /* Products */,
+				B0730734E73B62E4D3F7CE87 /* Pods */,
+				943507FBEE7319A11EFE14D5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		427F36F12383BB8C00D6A842 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				427F36F02383BB8C00D6A842 /* CCSocketJosnClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		427F36F22383BB8C00D6A842 /* CCSocketJosnClient */ = {
+			isa = PBXGroup;
+			children = (
+				427F36F32383BB8C00D6A842 /* AppDelegate.h */,
+				427F36F42383BB8C00D6A842 /* AppDelegate.m */,
+				427F36F62383BB8C00D6A842 /* SceneDelegate.h */,
+				427F36F72383BB8C00D6A842 /* SceneDelegate.m */,
+				427F36F92383BB8C00D6A842 /* ViewController.h */,
+				427F36FA2383BB8C00D6A842 /* ViewController.m */,
+				427F36FC2383BB8C00D6A842 /* Main.storyboard */,
+				427F36FF2383BB8E00D6A842 /* Assets.xcassets */,
+				427F37012383BB8E00D6A842 /* LaunchScreen.storyboard */,
+				427F37042383BB8E00D6A842 /* Info.plist */,
+				427F37052383BB8E00D6A842 /* main.m */,
+			);
+			path = CCSocketJosnClient;
+			sourceTree = "<group>";
+		};
+		943507FBEE7319A11EFE14D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE87C677E7CB2752BA4AFE45 /* Pods_CCSocketJosnClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0730734E73B62E4D3F7CE87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5925FC6657C9D8FA5324416A /* Pods-CCSocketJosnClient.debug.xcconfig */,
+				AF5283DE59ABA6D13C110F5F /* Pods-CCSocketJosnClient.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		427F36EF2383BB8C00D6A842 /* CCSocketJosnClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 427F37092383BB8E00D6A842 /* Build configuration list for PBXNativeTarget "CCSocketJosnClient" */;
+			buildPhases = (
+				1848257C1B95B3EDDB0D2FCD /* [CP] Check Pods Manifest.lock */,
+				427F36EC2383BB8C00D6A842 /* Sources */,
+				427F36ED2383BB8C00D6A842 /* Frameworks */,
+				427F36EE2383BB8C00D6A842 /* Resources */,
+				3AF9426B0210C1962940286E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCSocketJosnClient;
+			productName = CCSocketJosnClient;
+			productReference = 427F36F02383BB8C00D6A842 /* CCSocketJosnClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		427F36E82383BB8C00D6A842 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "CC (deng you hua | cworld1000@gmail.com)";
+				TargetAttributes = {
+					427F36EF2383BB8C00D6A842 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 427F36EB2383BB8C00D6A842 /* Build configuration list for PBXProject "CCSocketJosnClient" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 427F36E72383BB8C00D6A842;
+			productRefGroup = 427F36F12383BB8C00D6A842 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				427F36EF2383BB8C00D6A842 /* CCSocketJosnClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		427F36EE2383BB8C00D6A842 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427F37032383BB8E00D6A842 /* LaunchScreen.storyboard in Resources */,
+				427F37002383BB8E00D6A842 /* Assets.xcassets in Resources */,
+				427F36FE2383BB8C00D6A842 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1848257C1B95B3EDDB0D2FCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CCSocketJosnClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AF9426B0210C1962940286E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CCSocketJosnClient/Pods-CCSocketJosnClient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CCSocketJosnClient/Pods-CCSocketJosnClient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CCSocketJosnClient/Pods-CCSocketJosnClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		427F36EC2383BB8C00D6A842 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427F36FB2383BB8C00D6A842 /* ViewController.m in Sources */,
+				427F36F52383BB8C00D6A842 /* AppDelegate.m in Sources */,
+				427F37062383BB8E00D6A842 /* main.m in Sources */,
+				427F36F82383BB8C00D6A842 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		427F36FC2383BB8C00D6A842 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				427F36FD2383BB8C00D6A842 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		427F37012383BB8E00D6A842 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				427F37022383BB8E00D6A842 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		427F37072383BB8E00D6A842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		427F37082383BB8E00D6A842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		427F370A2383BB8E00D6A842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5925FC6657C9D8FA5324416A /* Pods-CCSocketJosnClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CCSocketJosnClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cc.CCSocketJosnClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		427F370B2383BB8E00D6A842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF5283DE59ABA6D13C110F5F /* Pods-CCSocketJosnClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CCSocketJosnClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cc.CCSocketJosnClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		427F36EB2383BB8C00D6A842 /* Build configuration list for PBXProject "CCSocketJosnClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427F37072383BB8E00D6A842 /* Debug */,
+				427F37082383BB8E00D6A842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		427F37092383BB8E00D6A842 /* Build configuration list for PBXNativeTarget "CCSocketJosnClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427F370A2383BB8E00D6A842 /* Debug */,
+				427F370B2383BB8E00D6A842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 427F36E82383BB8C00D6A842 /* Project object */;
+}
