@@ -1,20 +1,32 @@
 PODS:
+  - CCDebug (2.0.3)
   - CCSugar (1.2.3)
+  - CCTips (0.0.1):
+    - Toast
   - CocoaAsyncSocket (7.6.3)
+  - Toast (4.0.0)
 
 DEPENDENCIES:
+  - CCDebug
   - CCSugar
+  - CCTips
   - CocoaAsyncSocket
 
 SPEC REPOS:
   trunk:
+    - CCDebug
     - CCSugar
+    - CCTips
     - CocoaAsyncSocket
+    - Toast
 
 SPEC CHECKSUMS:
+  CCDebug: 8e8a89cbff3505c69b94ba0c38e2c8684d111efc
   CCSugar: 1c1727172511f684d0e241cca64a8ea14ffe1ec7
+  CCTips: 312f2d4bcff449af55e37053b55f28ea222c5d5b
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: 96e0356e87b410230b73f55ae375f6c518ea3edf
+PODFILE CHECKSUM: 857a10d3ab498ba1fdd751a4ed4694aa8b2666db
 
 COCOAPODS: 1.8.4

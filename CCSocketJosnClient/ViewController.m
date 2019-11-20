@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import <GCDAsyncSocket.h>
 #import <CCSugar/CCSugar.h>
+#import <CCTips/CCTips.h>
+#import <CCDebug/CCDebug.h>
 
 @interface ViewController ()<GCDAsyncSocketDelegate>
 
@@ -53,8 +55,8 @@
 }
 
 - (IBAction)connectServerHandle:(UIButton *)button {
-    NSLog(@"connectServerHandle");
     if (self.socket.isConnected) {
+        CCTipsForView(@"already connect to server");
         return;
     }
     
@@ -62,11 +64,15 @@
     [self.socket connectToHost:@"127.0.0.1" onPort:1234 error:&error];
     if (error) {
         NSLog(@"Socket Connect to Host Error: %@", error);
+    } else {
+        CCTipsForView(@"Ready connect to server ....");
     }
 }
 
 - (IBAction)clearResultHandle:(UIButton *)button {
-    NSLog(@"clearResultHandle");
+    if (button) {
+        CCTipsForView(@"clear result");
+    }
     
     [self.sendCache removeAllObjects];
     [self.receiveCache removeAllObjects];
@@ -75,16 +81,16 @@
 }
 
 - (IBAction)disconnectServerHandle:(UIButton *)button {
-    NSLog(@"disconnectServerHandle");
+    CCTipsForView(@"discnnect server");
     
     [self.socket disconnect];
     _socket = nil;
 }
 
 - (IBAction)sendDataHandle:(UIButton *)sender {
-    NSLog(@"sendDataHandle");
+    CCDebugPrint(@"sendDataHandle");
     if (!self.socket.isConnected) {
-        NSLog(@"You should connect server first!");
+        CCTipsForView(@"You should connect server first!");
         return;
     }
     

@@ -8,5 +8,7 @@ target 'CCSocketJosnClient' do
   # Pods for CCSocketJosnClient
   pod 'CocoaAsyncSocket'
   pod 'CCSugar'
+  pod 'CCTips'
+  pod 'CCDebug'
 
 end
